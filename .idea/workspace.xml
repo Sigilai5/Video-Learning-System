@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba0e1f57-48c0-4d89-95e4-6c268ae75b82" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,12 +14,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -47,6 +52,7 @@
       <list>
         <option value="$PROJECT_DIR$/scripts.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/login.html" />
       </list>
     </option>
   </component>
@@ -60,9 +66,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="47" />
-    <option name="width" value="1340" />
+    <option name="y" value="27" />
+    <option name="width" value="1346" />
     <option name="height" value="701" />
   </component>
   <component name="ProjectView">
@@ -87,7 +92,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -112,26 +117,27 @@
       <option name="presentableId" value="Default" />
       <updated>1526303677544</updated>
       <workItem from="1526303682445" duration="1049000" />
-      <workItem from="1526363717332" duration="177000" />
+      <workItem from="1526363717332" duration="3259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1226000" />
+    <option name="totallyTimeSpent" value="4308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1360" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24632353" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32903227" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33064517" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33064517" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -150,7 +156,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -163,9 +169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -174,6 +177,13 @@
             <caret column="21" selection-start-column="21" selection-end-column="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
