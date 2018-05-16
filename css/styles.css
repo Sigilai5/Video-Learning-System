@@ -1,6 +1,10 @@
 .vls-icon{
   height: 50px;
   width: 50px;
+  display: block;
+  border-radius: 99em;
+  border: 3px solid #eee;
+  box-shadow: 0 0 25px #048CE5;
 }
 h4{
   color: white;
@@ -32,11 +36,12 @@ h4{
   color: white;
   display: block;
 }
-.btn-block{
-  background-color: transparent;
+.btn-login{
+  background-color: #F5F5EE;
   border-color: white;
+  margin-right: 50px;
 }
-.btn-block:hover{
+.btn-login:hover{
   color:#048CE5;
   box-shadow: 0 0 30px #048CE5;
 }
@@ -55,7 +60,32 @@ body{
 }
 #myCarousel img{
   width: 100%;
+  height: 50%;
+  opacity: 0.3;
 }
 .navbar-inverse{
   margin-bottom: 0;
+}
+.carousel-inner{
+  width:100%;
+}
+.container{
+  width:100%;
+}
+h3{
+  color:#F5F5EE;
+  font-size: 30px;
+}
+.navbar-inverse{
+  box-shadow: 0 0 30px #93D4F9;
+  height: 60px;
+}
+.navbar-icon{
+
+}
+.popup{
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 12px;
 }

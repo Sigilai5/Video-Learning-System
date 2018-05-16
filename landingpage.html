@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
 </head>
 <body>
-
-  <nav class="navbar navbar-inverse">
-    <div class="nav navbar-header">
+<div class="container">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header navbar-left navbar-icon">
       <img src="img/vls-icon.png" class="vls-icon img-circle">
     </div>
-    <div class="nav navbar-header"><h4><strong>VIDEO LEARNING SYSTEM</strong></h4></div>
+    <div class="nav navbar-header navbar-left"><h4 class="navbar-text"><strong>VIDEO LEARNING SYSTEM</strong></h4></div>
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-left popup">
+        <button class="navbar-nav"><a href="#" class="glyphicon glyphicon-th"></a></button>
+      </ul>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#"><strong>Home</strong></a></li>
-        <li><a href="#"><strong>Profile</strong></a></li>
       </ul>
       <form class="navbar-form navbar-left">
         <div class="input-group searchbox">
@@ -28,9 +33,10 @@
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="btn btn-block"><strong>Login</strong></a></li>
+        <button class="btn btn-default navbar-btn btn-login"><strong>Login</strong></button>
       </ul>
     </div>
+  </div>
   </nav>
 
  <!-- <div class="btn menuicon">
@@ -41,8 +47,10 @@
    <button class="btn btn-block"><a href="#CSS"><strong>CSS</strong></a></button>
    <button class="btn btn-block"><a href="#JAVASCRIPT"><strong>JAVASCRIPT</strong></a></button>
  </div> -->
-  <div class="row">
-   <div  id="myCarousel" class="carousel slide" data-ride="carousel" data-autoplay="true">
+  <div>
+
+   <div  id="myCarousel" class="carousel slide row" data-ride="carousel" data-autoplay="true">
+
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -51,6 +59,7 @@
     </ol>
 
     <!-- Wrapper for slides -->
+
     <div class="carousel-inner">
       <div class="item active">
         <img src="img/coding2.jpeg" alt="Coding">
@@ -62,13 +71,12 @@
       <div class="item">
         <img src="img/smiling.jpg" alt="smiling">
         <div class="carousel-caption">
-          <h3><strong>Then Be Happy</strong></h3>
-          <h3><strong>Because ...</strong></h3>
+          <h3><strong>Then Be Happy Because...</strong></h3>
         </div>
       </div>
 
       <div class="item">
-        <img src="img/coding5.jpg" alt="code">
+        <img src="img/coding1.jpg" alt="code">
         <div class="carousel-caption">
           <h3><strong>With the Video Content here</strong></h3>
           <h3><strong>You'll Surely Learn How to Code</strong></h3>
@@ -87,6 +95,6 @@
     </a>
   </div>
 </div>
-
+</div>
 </body>
 </html>
