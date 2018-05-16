@@ -1,0 +1,61 @@
+.vls-icon{
+  height: 50px;
+  width: 50px;
+}
+h4{
+  color: white;
+}
+.searchbox{
+  position: absolute;
+  left: 575px;
+  width:550px;
+}
+.btn-primary-outline{
+  border-color:white;
+}
+.sidenav{
+  height: 100%;
+  width: 175px;
+  position: absolute;
+  z-index: 1;
+  top: 108px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 30px;
+  border-radius: 10px;
+}
+.sidenav a{
+  padding: 8px 10px 8px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+}
+.btn-block{
+  background-color: transparent;
+  border-color: white;
+}
+.btn-block:hover{
+  color:#048CE5;
+  box-shadow: 0 0 30px #048CE5;
+}
+.menuicon:hover{
+  box-shadow: 0 0 30px #048CE5;
+}
+.menuicon a:hover{
+  color: white;
+}
+.well{
+  box-shadow: 0 0 30px #048CE5;
+  padding: 0px;
+}
+body{
+  background-color: #031520;
+}
+#myCarousel img{
+  width: 100%;
+}
+.navbar-inverse{
+  margin-bottom: 0;
+}
