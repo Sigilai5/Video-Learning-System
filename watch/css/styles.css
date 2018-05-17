@@ -24,8 +24,11 @@ h6 {
   background-color: #8c8c8c36;
   border-radius: 17px;
   margin-left: 5vw;
-  height: 30vh;
+  height: 76vh;
   width: 90vw;
+}
+#videoinfo {
+  height: 20%;
 }
 #sidenavbar {
   display: none;
