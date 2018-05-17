@@ -12,10 +12,13 @@ if (isset($_GET['logout'])) {
     header("location:login.php");
 }
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Home</title>
+
     <link rel="stylesheet" href="styles.css">
     <style>
         .header {
@@ -51,13 +54,15 @@ if (isset($_GET['logout'])) {
             <?php  if (isset($_SESSION['user'])) : ?>
                 <strong><?php echo $_SESSION['user']['username']; ?></strong>
 
-                <small>
+                <big>
                     <i  style="color: #888;">(<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>
                     <br>
-                    <a href="home.php?logout='1'" style="color: red;">logout</a>
-                    &nbsp; <a href="create_user.php"> + add user</a><br>
-                    <h1><a href="upload.php"> + add video</a></h1>
-                </small>
+                    <a href="home.php?logout='1'" style="color: red;">logout</a><br>
+                    <center>
+                    &nbsp; <a href="create_user.php"><button class="btn">+ Add New Admin</button></a><br>
+                        <h1><a href="upload.php"><button class="btn">+Videos</button></a></h1>
+                    </center>
+                </big>
 
             <?php endif ?>
         </div>

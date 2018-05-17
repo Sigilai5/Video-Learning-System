@@ -6,11 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="header">
+
     <h2>Upload</h2>
 </div>
 <form method="POST" action="" enctype="multipart/form-data">
@@ -82,7 +84,7 @@
     }
     ?>
 </form>
-
+<a href="home.php"><button class="btn" id="goback">Go back</button></a>
 
 
 

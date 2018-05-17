@@ -4,6 +4,7 @@
 <head>
     <title>Registration system PHP and MySQL - Create user</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="../js/scripts.js"></script>
     <style>
         .header {
             background: #003366;
@@ -47,7 +48,9 @@
     </div>
     <div class="input-group">
         <button type="submit" class="btn" name="register_btn"> + Create user</button>
+
     </div>
 </form>
+<a href="home.php"><button class="btn" id="goback">Go back</button></a>
 </body>
 </html>

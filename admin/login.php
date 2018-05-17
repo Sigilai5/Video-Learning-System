@@ -31,6 +31,7 @@
     </div>
 
 </form>
+<a href="../landingpage.html"><button class="btn" id="goback">Go back</button></a>
 <!--http://www.learningaboutelectronics.com/Articles/How-to-create-a-searchable-database-using-MySQL-and-PHP.php#results-->
 </body>
 </html>
