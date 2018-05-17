@@ -62,16 +62,16 @@
                 $upload_success=move_uploaded_file($_FILES['video']['tmp_name'],$target);
                 if($upload_success==TRUE){
                     //Getting Selected video Information
-                    $name=$_FILES['video']['name'];
+                    $video=$_FILES['video']['name'];
                     $size=$_FILES['video']['size'];
                     // Get text
-                    $name = mysqli_real_escape_string($db, $_POST['name']);
+                    $title = mysqli_real_escape_string($db, $_POST['name']);
                     $description = mysqli_real_escape_string($db, $_POST['description']);
                     $category = mysqli_real_escape_string($db, $_POST['category']);
-                    $sql="INSERT INTO videos (video,name,description,category)VALUES('$name','$title','$size','$type')";
+                    $sql="INSERT INTO videos (video,title,description,category)VALUES('$video','$title','$description','$category')";
                     $result=mysqli_query($db,$sql);
                     if($result==TRUE){
-                        echo "<p style='color:chocolate'>Your meme  is successfully Uploaded!</p>";
+                        echo "<p style='color:chocolate'>Your video  is successfully Uploaded!</p>";
                     }
                 }
             }
