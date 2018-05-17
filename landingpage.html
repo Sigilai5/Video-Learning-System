@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
@@ -20,15 +20,15 @@
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="navbar-nav navbar-left popup">
         <button class="btn btn-default btn-login avbar-btn">
-          <span><li class="glyphicon glyphicon-th"><strong>Menu</strong></li></span>
+          <li class="glyphicon glyphicon-th"></li>
       </button>
       </ul>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><strong>Home</strong></a></li>
-      </ul>
-      <form class="navbar-form navbar-left">
+      <form class="navbar-form navbar-left" autocomplete="off" id="searchForm">
         <div class="input-group searchbox">
-          <input type="text" class="form-control" placeholder="Search">
+          <div>
+            <input type="text" class="form-control" id="searchInput" placeholder="Search">
+            <ul id="suggestions"></ul>
+          </div>
           <span class="input-group-btn">
             <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           </span>
@@ -44,11 +44,11 @@
  <!-- <div class="btn menuicon">
    <a class="glyphicon glyphicon-th"></a>
  </div> -->
- <!-- <div class="sidenav panel">
+ <div class="sidenav panel" id="sidenavbar">
    <button class="btn btn-block"><a href="#HTML"><strong>HTML</strong></a></button>
    <button class="btn btn-block"><a href="#CSS"><strong>CSS</strong></a></button>
    <button class="btn btn-block"><a href="#JAVASCRIPT"><strong>JAVASCRIPT</strong></a></button>
- </div> -->
+ </div>
   <div>
 
    <div  id="myCarousel" class="carousel slide row" data-ride="carousel" data-autoplay="true">
@@ -95,6 +95,8 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div>
+  <div id="target">
   </div>
 </div>
 </div>
