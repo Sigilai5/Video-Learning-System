@@ -4,7 +4,7 @@
 <head>
     <title>Registration system PHP and MySQL - Create user</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="../js/scripts.js"></script>
+    <script src="../js/scriptsb.js"></script>
     <style>
         .header {
             background: #003366;

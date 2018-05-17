@@ -20,7 +20,7 @@ $results = mysqli_query($db,"SELECT * FROM videos WHERE category='HTML' ORDER BY
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
     <script src="../js/jquery.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/scriptsb.js"></script>
 
 </head>
 <body>
