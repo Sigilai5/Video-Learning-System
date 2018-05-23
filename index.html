@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
   <script src="js/scripts.js"></script>
+  <title>Video Learning System</title>
 </head>
 <body>
-<div class="container">
+<div class="wrapper">
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3><strong>VLS</strong></h3>
+    </div>
+    <ul class="list-unstyled components">
+      <li class="active"><a href="/vls/">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li>
+        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">VIDEOS</a>
+        <ul class="collapse list-unstyled" id="homeSubmenu">
+        </ul>
+      </li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <div id="main">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-    <div class="navbar-header navbar-left navbar-icon">
-      <img src="img/vls-icon.png" class="vls-icon img-circle">
-    </div>
+    <a href="/vls">
+      <div class="navbar-header navbar-left navbar-icon">
+        <img src="img/vls-icon.png" class="vls-icon img-circle">
+      </div>
+    </a>
     <div class="nav navbar-header navbar-left"><h4 class="navbar-text"><strong>VIDEO LEARNING SYSTEM</strong></h4></div>
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="navbar-nav navbar-left popup">
-        <button class="btn btn-default btn-login avbar-btn">
-          <span><li class="glyphicon glyphicon-th"><strong>Menu</strong></li></span>
+        <button class="btn btn-default btn-login" onclick="openNav()">
+          <span class="glyphicon glyphicon-th" id="sidebarCollapse" ><strong>Menu</strong></span>
       </button>
       </ul>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><strong>Home</strong></a></li>
+        <li class="active"><a href="/vls/"><strong>Home</strong></a></li>
       </ul>
-      <form class="navbar-form navbar-left">
+      <form class="navbar-form navbar-left" autocomplete="off" id="searchForm">
         <div class="input-group searchbox">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search" id="searchInput" list="suggestions">
+          <datalist id="suggestions"></datalist>
           <span class="input-group-btn">
             <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
           </span>
@@ -41,27 +61,16 @@
   </div>
   </nav>
 
- <!-- <div class="btn menuicon">
-   <a class="glyphicon glyphicon-th"></a>
- </div> -->
- <!-- <div class="sidenav panel">
-   <button class="btn btn-block"><a href="#HTML"><strong>HTML</strong></a></button>
-   <button class="btn btn-block"><a href="#CSS"><strong>CSS</strong></a></button>
-   <button class="btn btn-block"><a href="#JAVASCRIPT"><strong>JAVASCRIPT</strong></a></button>
- </div> -->
-  <div>
 
-   <div  id="myCarousel" class="carousel slide row" data-ride="carousel" data-autoplay="true">
 
+   <div  id="myCarousel" class="carousel slide" data-ride="carousel" data-autoplay="true">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-
     <!-- Wrapper for slides -->
-
     <div class="carousel-inner">
       <div class="item active">
         <div class="image1"></div>
@@ -96,6 +105,7 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <div id="target" class="row container"></div>
 </div>
 </div>
 </body>

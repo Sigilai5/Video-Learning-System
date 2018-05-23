@@ -6,17 +6,12 @@
   border: 3px solid #eee;
   box-shadow: 0 0 25px #048CE5;
 }
+h6 {
+  color: white;
+}
 .row {
   margin-left: 0px;
   margin-right: 0px;
-}
-textarea {
-  width: 98%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-h6 {
-  color: white;
 }
 #target {
   padding-top: 20vh;
@@ -33,9 +28,11 @@ h6 {
   background-color: #8c8c8c36;
   border-radius: 17px;
   margin-left: 5vw;
-  height: 30vh;
+  height: 76vh;
   width: 90vw;
-  margin-top: 1vh;
+}
+#videoinfo {
+  height: 20%;
 }
 #sidenavbar {
   display: none;
@@ -109,7 +106,6 @@ body{
 }
 .container{
   width:100%;
-  background-color: #222;
 }
 h3{
   color:#F5F5EE;
