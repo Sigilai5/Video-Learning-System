@@ -9,6 +9,10 @@
 h6 {
   color: white;
 }
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 #target {
   padding-top: 20vh;
   display: none;

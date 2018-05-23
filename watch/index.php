@@ -3,7 +3,7 @@ $db = mysqli_connect('127.0.0.1','root','','vls');
 if (isset($_GET['video'])){
 	$vid=mysqli_real_escape_string($db,$_GET['video']);
 
-	$sql ="SELECT * FROM videos WHERE id = $vid";
+	$sql ="SELECT * FROM videos WHERE id = '$vid'";
 
 	$resp = mysqli_query($db,$sql);
 	$rows = array();
@@ -22,7 +22,8 @@ if (isset($_GET['video'])){
   <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="../js/jquery.js"></script>
-  <script src="../js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
+  <title><?php echo $video['name']?></title>
 </head>
 <body>
 <div class="wrapper">
@@ -36,9 +37,6 @@ if (isset($_GET['video'])){
       <li>
         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">VIDEOS</a>
         <ul class="collapse list-unstyled" id="homeSubmenu">
-          <li><a href="#">HTML VIDEOS</a></li>
-          <li><a href="#">CSS VIDEOS</a></li>
-          <li><a href="#">JAVASCRIPT VIDEOS</a></li>
         </ul>
       </li>
       <li><a href="#">CONTACT</a></li>
@@ -82,12 +80,12 @@ if (isset($_GET['video'])){
  <div id="target" class="row" style="display: block;">
   	<div class="col-xs-12 row result">
       <div class="col-xs-12 videoplay">
-        <video width="80%" height="80%" controls>
+        <video width="80%" height="80%" controls autoplay>
           <source src="<?php print '../'.$video['video']; ?>">
         </video>
         <div id="videoinfo">
-	        <h3><?php echo $video['name']?></h3>
-	        <h4><p><?php echo $video['description']?></p></h4>
+	        <h4 style="color: #ccc"><?php echo $video['name']?></h4>
+	        <h5 style="color: #eee"><?php echo $video['description']?></h5>
 	    </div>
       </div>
     </div>

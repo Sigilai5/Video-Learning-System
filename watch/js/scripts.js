@@ -29,19 +29,19 @@ function render(result) {
 	video_title=result['name'];
 	video_desc=result['description'];
 	video_id=result['id'];
-	videodiv='<div class="col-xs-12 row result">\n\t<div class="col-xs-4 videoplay">\n\t\t<video height="90%">';
-	videodiv+='\n\t\t\t<source src="'+video_link+'" alt="Constuctive Video">\n\t\t</video>';
-	videodiv+='\n\t</div>\n\t<div class="col-xs-8">\n\t\t<a href="watch/?video='+video_id+'"><h3>'+video_title+'</h3></a>';
+	videodiv='<div class="col-xs-12 row result" style="height: 30vh;margin-top: 1vh;">\n\t<div class="col-xs-4 videoplay">\n\t\t<video height="90%">';
+	videodiv+='\n\t\t\t<source src="../'+video_link+'" alt="Constuctive Video">\n\t\t</video>';
+	videodiv+='\n\t</div>\n\t<div class="col-xs-8">\n\t\t<a href="../watch/?video='+video_id+'"><h3>'+video_title+'</h3></a>';
 	videodiv+='\n\t\t<h6>'+video_desc+'</h6>\n\t</div>\n</div>';
 	$("#target").append(videodiv);
 }
 $('document').ready(function() {
 	$.ajax({
-		url : 'getTypes/',
+		url : '../getTypes/',
 		success : function(types){
 			types= JSON.parse(types);
 			types.forEach(function(single) {
-				$("#homeSubmenu").append('<li><a href="viewcategory/?category='+single["category"]+'">'+single["category"].toUpperCase()+'</a></li>')
+				$("#homeSubmenu").append('<li><a href="../viewcategory/?category='+single["category"]+'">'+single["category"].toUpperCase()+'</a></li>')
 			})
 		}
 	});
@@ -53,7 +53,7 @@ $('document').ready(function() {
 			return null
 		}
 		$.ajax({
-			url : 'autocomplete/',
+			url : '../autocomplete/',
 			data : {
 				'inp' : textQuery
 			},
@@ -76,7 +76,7 @@ $('document').ready(function() {
 			return null
 		};
 		$.ajax({
-			url : 'search/',
+			url : '../search/',
 			data : {
 				'inp' : textQuery
 			},

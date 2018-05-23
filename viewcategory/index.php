@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html>
+<?php
+
+$db = mysqli_connect("localhost", "root", "", "vls");
+
+$msg = "";
+$cat = mysqli_real_escape_string($db,$_GET['category']);
+$results = mysqli_query($db,"SELECT * FROM videos WHERE category = '$cat' ORDER BY time DESC");
+
+?>
+<!doctype html>
+<html lang="en">
 <head>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+  <script src="../js/jquery.js"></script>
   <script src="js/scripts.js"></script>
   <title>Video Learning System</title>
 </head>
@@ -59,54 +68,42 @@
       </ul>
     </div>
   </div>
-  </nav>
-
-
-
-   <div  id="myCarousel" class="carousel slide" data-ride="carousel" data-autoplay="true">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="image1"></div>
-        <div class="carousel-caption">
-          <h3 class="imgtext"><strong>Are You Learning How to Code?</strong></h3>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="image2"></div>
-        <div class="carousel-caption">
-          <h3 class="imgtext"><strong>Then Be Happy Because...</strong></h3>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="image3"></div>
-        <div class="carousel-caption">
-          <h3 class="imgtext"><strong>With The Video Content Here</strong></h3>
-          <h3 class="imgtext"><strong>You'll Surely Learn How To Code!</strong></h3>
-        </div>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-  <div id="target" class="row container"></div>
+<div id='target' class="container">
+<div class="row">
+   <?php
+   while ($row = mysqli_fetch_array($results)) {
+       echo "<div class='col-xs-4'>";
+       echo "<div class='panel panel-info''>";
+       echo "<div class='panel-heading' style='background-color: #3c3d41; color: whitesmoke'>";
+
+       echo "<h2 class='panel-title'>" .$row['name']."</h2>";
+
+       echo "</div>";
+
+       echo "<div class='panel-body'>";
+       echo "<div class='row'>";
+
+       echo "<video width='100%' height='50%' controls>";
+       echo "<source src='../".$row['video']."' alt='videos".$row['name']."'>";
+       echo "</video>";
+
+       echo "<div class='header3' style='height: 25%;color: black;'>";
+       echo "<a href=../watch/?video=".$row['id']."><h4><strong style='color: black;'>".$row['name']."</strong></h4></a>";
+       echo"</div>";
+       echo "<div class='desc' style='height: 25%'>";
+       echo "<textarea rows=3 >".$row['description']. "</textarea>";
+
+
+       echo "</div>";
+       echo "</div>";
+       echo "</div>";
+
+       echo "</div>";
+
+       echo "</div>";
+   }?>
 </div>
-</div>
+<script type="text/javascript">$("#target").show();$('h2').quickfit()</script>
 </body>
 </html>
